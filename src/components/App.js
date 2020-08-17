@@ -38,6 +38,8 @@ function App() {
         ...weatherData,
         [city]: transformData(result)
       });
+
+      setLoading(false);
     } catch (err) {
       setLoading(false);
       setIsError(true);
